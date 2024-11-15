@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/image-removebg-preview-1.png" height="80px" width="75px">
+        <nav class="navigation">
+            <button class="btnLogin-popup">Đăng Nhập</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Đăng Nhập</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" placeholder="Tên Đăng Nhập" style="color: aliceblue;">
+                    <!-- <label>Email</label> -->
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon 
+                    name="lock-closed"></ion-icon></span>
+                    <input type="password"  placeholder="Mật Khẩu"  style="color: aliceblue;">
+                    <!-- <label>Password</label> -->
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Lưu Thông Tin</label>
+                    <a href="#"> Quên Mật Khẩu?</a>
+                </div>
+                <button type="submit" class="btn"><a href="index.html">Đăng Nhập</a></button>
+                <div class="login-register">
+                    <p>Chưa có tài khoản?<a href="#" class="register-link">Đăng ký</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" placeholder="User Name"  style="color: aliceblue;" required >
+                    
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon></span>
+                    <input type="email" placeholder="Mail"  style="color: aliceblue;" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon 
+                    name="lock-closed"></ion-icon></span>
+                    <input type="password" placeholder="Password"  style="color: aliceblue;" required>
+                    
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                    
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
